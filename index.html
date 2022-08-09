@@ -1,21 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8">
+    <meta charset="UTF-8" />
     <title>Fork Me! FCC: Test Suite Template</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.css" />
   </head>
 
   <body>
     <h1 id="title">freeCodeCamp Survey Form</h1>
-    <p id="description">Thank you for taking the time to help us improve the platform</p>
+    <p id="description">
+      Thank you for taking the time to help us improve the platform
+    </p>
     <form id="survey-form">
-      <label>Name</label>
-      <input id="name" type="text" placeholder="Enter your name" required>
-      <label>Email</label>
-      <input id="email" type="email" placeholder="Enter your email" name="email" required>
-      <label>Age (optional)</label>
-      <input id="number" name="age" type="number" placeholder="Age" min="12" max="70"> 
+      <label id="name-label">Name</label>
+      <input id="name" type="text" placeholder="Enter your name" required />
+
+      <label id="email-label">Email</label>
+      <input
+        id="email"
+        type="email"
+        placeholder="Enter your email"
+        name="email"
+        required
+      />
+
+      <label id="number-label">Age (optional)</label>
+      <input
+        id="number"
+        name="age"
+        type="number"
+        placeholder="Age"
+        min="12"
+        max="70"
+      />
+
+      <select name="#" id="dropdown">
+        <option value="student">Student</option>
+        <option value="Job">Job</option>
+      </select>
+
+      <input value="definitely" name="user" type="radio" />
+
+      <input value="maybe" name="user" type="radio" />
+
+      <input name="checkbox" type="checkbox" value="front-end-projects" />
+      <input name="checkbox" type="checkbox" value="back-end-projects" />
+
+      <textarea
+        name="comment"
+        id="comments"
+        placeholder="Enter your comment here..."
+      ></textarea>
+
+      <button id="submit">Submit</button>
     </form>
     <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
 
@@ -31,6 +68,6 @@
     - The freeCodeCamp Team
 
     -->
-    <script  src="js/index.js"></script>
+    <script src="js/index.js"></script>
   </body>
 </html>
